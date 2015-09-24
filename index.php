@@ -12,28 +12,25 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <form class="login" action="<?php $_PHP_SELF ?>" method="GET">>
-      <fieldset>
-        <legend class="legend">Login</legend>
-          <div class="input">
-            <input type="email" placeholder="Email" required />
-            <span><i class="fa fa-envelope-o"></i></span>
-          </div>
-          <div class="input">
-            <input type="password" placeholder="Password" required />
-            <span><i class="fa fa-lock"></i></span>
-          </div>
-
-          <button type="submit" class="submit"><i class="fa fa-long-arrow-right"></i></button>
-
+    <form id='login' action='<?php $_PHP_SELF ?>' method='post' accept-charset='UTF-8'>
+      <fieldset >
+        <legend>Login</legend>
+        <input type='hidden' name='submitted' id='submitted' value='1'/>
+ 
+        <label for='username' >MySQL Username*:</label>
+        <input type='text' name='username' id='username'  maxlength="50" />
+ 
+        <label for='password' >Password*:</label>
+        <input type='password' name='password' id='password' maxlength="50" />
+ 
+        <input type='submit' name='Submit' value='Submit' />
+ 
       </fieldset>
-      <div class="feedback">
-login successful <br />
-redirecting...
-      </div>
     </form>
+    <p>
+    <?php
+      phpinfo()
+    ?>
+    </p>
   </body>
 </html>
-<?php
-phpinfo()
-?>
