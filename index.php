@@ -12,11 +12,6 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <form action="<?php $_PHP_SELF ?>" method="GET">
- Name: <input type="text" name="name" />
- Age: <input type="text" name="age" />
-      <input type="submit" />
-    </form>
     <form class="login" action="<?php $_PHP_SELF ?>" method="GET">>
       <fieldset>
         <legend class="legend">Login</legend>
@@ -24,7 +19,6 @@
             <input type="email" placeholder="Email" required />
             <span><i class="fa fa-envelope-o"></i></span>
           </div>
-
           <div class="input">
             <input type="password" placeholder="Password" required />
             <span><i class="fa fa-lock"></i></span>
