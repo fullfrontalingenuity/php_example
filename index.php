@@ -9,6 +9,7 @@
 <html>
   <head>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <form action="<?php $_PHP_SELF ?>" method="GET">
@@ -16,7 +17,7 @@
  Age: <input type="text" name="age" />
       <input type="submit" />
     </form>
-    <form class="login">
+    <form class="login" action="<?php $_PHP_SELF ?>" method="GET">>
       <fieldset>
         <legend class="legend">Login</legend>
           <div class="input">
