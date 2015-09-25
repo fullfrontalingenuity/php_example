@@ -21,9 +21,6 @@ if(!$fgmembersite->CheckLogin())
 <div id='fg_membersite_content'>
 <h2>Test MySQL</h2>
 Use root MySQL password to start a test of MySQL using php.
-<p>
-Logged in as: <?= $fgmembersite->UserFullName() ?>
-</p>
 </div>
 
 <?php
@@ -40,6 +37,7 @@ $db         = "test";
 $table      = "pet";
 
 echo "<h1>Linux Apache MySQL PHP (LAMP) Validation</h1>";
+echo "<b>Logged in as:</b> " . $fgmembersite->UserFullName() . "<br>";
 echo "<b>Current Time:</b> " . date('Y-m-d H:i:s') . "<br>";
 echo "<b>Linux:</b> " . php_uname() . "<br>";
 echo "<b>Apache</b> : " . apache_get_version() . "<br>";
@@ -47,7 +45,7 @@ echo "<b>MySQL</b> : " . mysql_get_server_info() . "<br>";
 echo "<b>PHP</b> : " . phpversion() . "<br>";
 echo "<br>";
 
-if (isset($dbpw)){ 
+if (isset($_POST["password"])){ 
 
 $user= $_POST["user"];
 if($user){
