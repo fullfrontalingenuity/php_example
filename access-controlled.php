@@ -66,8 +66,7 @@ if($password){
 //echo "<b>MySQL pw:</b> $dbpw<br>";
 
 echo "<b>Connect to database server:</b> " . $dbserver . "<br>";
-$link = mysql_connect($dbserver, $dbuser, $dbpw) 
-   or die('<b>Could not connect:</b> ' . mysql_error() . '<br>');
+$link = mysql_connect($dbserver, $dbuser, $dbpw) or die('<b>Could not connect:</b> ' . mysql_error() . '<br>');
 echo "<b>Connected successfully</b><br>";
 
 $r0 = mysql_select_db( $db );
@@ -81,8 +80,7 @@ if (!$r0) {
 echo "<br>";
 
 echo "<b>Create table " . $table . "</b><br>";
-mysql_query("CREATE TABLE IF NOT EXISTS " . $table . "(Name VARCHAR(20), Handler VARCHAR(20), Species VARCHAR(20), Gender CHAR(1), Bday DATE, Food VARCHAR(20));") 
-   or die(mysql_error());  
+mysql_query("CREATE TABLE IF NOT EXISTS " . $table . "(Name VARCHAR(20), Handler VARCHAR(20), Species VARCHAR(20), Gender CHAR(1), Bday DATE, Food VARCHAR(20));") or die(mysql_error());  
 
 // Describe table.
 $query = "DESCRIBE " . $table;
@@ -105,23 +103,16 @@ if($res) {
 echo "<br>";
 // Populate table with sample data values.
 echo "<b>Insert values.</b><br>";
-mysql_query("INSERT INTO " . $table . " VALUES ('Oscar','Connie','cat','f','1999-03-30','sparrow');")
-   or die(mysql_error());  
-mysql_query("INSERT INTO " . $table . " VALUES ('Missy','SueEllen','giraffe','f','1993-02-04','capncrunch');")
-   or die(mysql_error());  
-mysql_query("INSERT INTO " . $table . " VALUES ('Orson','Deidre','hippopotamus','m','1994-03-17','birds');")
-   or die(mysql_error());  
-mysql_query("INSERT INTO " . $table . " VALUES ('Bear','Jenn','dog','m','2002-06-26','berries');")
-   or die(mysql_error());  
-mysql_query("INSERT INTO " . $table . " VALUES ('Stella','Calvin','monkey','f','2006-06-03','bananas');")
-   or die(mysql_error());  
-mysql_query("INSERT INTO " . $table . " VALUES ('Calvin','RCompos','dog','m','2004-01-10','greenchili');")
-   or die(mysql_error());  
+mysql_query("INSERT INTO " . $table . " VALUES ('Oscar','Connie','cat','f','1999-03-30','sparrow');") or die(mysql_error());  
+mysql_query("INSERT INTO " . $table . " VALUES ('Missy','SueEllen','giraffe','f','1993-02-04','capncrunch');") or die(mysql_error());  
+mysql_query("INSERT INTO " . $table . " VALUES ('Orson','Deidre','hippopotamus','m','1994-03-17','birds');") or die(mysql_error());  
+mysql_query("INSERT INTO " . $table . " VALUES ('Bear','Jenn','dog','m','2002-06-26','berries');") or die(mysql_error());  
+mysql_query("INSERT INTO " . $table . " VALUES ('Stella','Calvin','monkey','f','2006-06-03','bananas');") or die(mysql_error());  
+mysql_query("INSERT INTO " . $table . " VALUES ('Calvin','RCompos','dog','m','2004-01-10','greenchili');") or die(mysql_error());  
 
 // Print formatted output from query.
 echo "<b>select * from pet</b><br>";
-$res = mysql_query("select * from " . $table . ";")
-   or die(mysql_error());  
+$res = mysql_query("select * from " . $table . ";") or die(mysql_error());  
 if($res) {
    echo "<table border=1>\n";
    for($i = 0; $i < mysql_num_fields($res); $i++) {
@@ -138,8 +129,7 @@ if($res) {
 }
 
 echo "<b>Drop table " . $table . "</b><br>";
-mysql_query("DROP TABLE " . $table . ";")
-   or die(mysql_error());  
+mysql_query("DROP TABLE " . $table . ";") or die(mysql_error());  
 
 mysql_close($link);
 
