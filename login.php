@@ -19,7 +19,9 @@ if(isset($_POST['submitted']))
       <script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
 </head>
 <body>
-
+<?php
+  include './include/header.php';
+?>
 <!-- Form Code Start -->
 <div id='fg_membersite'>
 <form id='login' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
