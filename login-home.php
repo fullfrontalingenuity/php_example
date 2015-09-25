@@ -20,12 +20,10 @@ if(!$fgmembersite->CheckLogin())
   include './include/header.php';
 ?>
 <div id='fg_membersite_content'>
-<h2>Home Page</h2>
+<h2>demo</h2>
 Welcome back <?= $fgmembersite->UserFullName(); ?>!
-
+<img src="images/lamp.jpg" class="centered" alt="LAMP" height="500" width="500">
 <p><a href='change-pwd.php'>Change password</a></p>
-
-<p><a href='access-controlled.php'>A sample 'members-only' page</a></p>
 <br><br><br>
 <p><a href='logout.php'>Logout</a></p>
 </div>
