@@ -6,16 +6,9 @@
       <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css">
 </head>
 <body>
-
-<div style='clear: both; width: 100%; font-size: 14px; font-family: Helvetica; color: #30121d; background: #bcbf77; padding: 20px; text-align: center;'>
-  <span style='color:#fff; font-weight: bold; text-transform: uppercase;'>
 <?php
-  require_once("./include/gitbranch.php");
-  GitBranch();
+  include './include/gitbranch.php';
 ?>
-  </span>
-</div>
-
 <div id='fg_membersite_content'>
 <h2>demo</h2>
 <ul>

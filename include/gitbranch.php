@@ -16,19 +16,16 @@ function GitBranch()
       $background = "#bcbf77";
       break;
     case "staging":
-      $background = "#ffffff";
+      $background = "#685aff";
       break;
     case "prod":
-      $background = "#aaaaaa";
+      $background = "#f1ff5a";
       break;
     default:
-      $background = "#ffffff";
-      echo "unexpected branch: ";
+      $background = "#ff625a";
   }
   echo "<div style='clear: both; width: 100%; font-size: 14px; font-family: Helvetica; color: #30121d; background: ", $background, "; padding: 20px; text-align: center;'>";
-  echo "<span style='color:#fff; font-weight: bold; text-transform: uppercase;'>";
-  echo $branchname;
-  echo "</span>";
+  echo "<span style='color:#fff; font-weight: bold; text-transform: uppercase;'>", $branchname, "</span>";
   echo "</div>";
 } 
 ?>
