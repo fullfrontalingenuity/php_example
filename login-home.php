@@ -23,9 +23,6 @@ if(!$fgmembersite->CheckLogin())
 <h2>demo</h2>
 Welcome back <?= $fgmembersite->UserFullName(); ?>!
 <img src="images/lamp.jpg" class="centered" alt="LAMP" height="500" width="500">
-<p><a href='change-pwd.php'>Change password</a></p>
-<br><br><br>
-<p><a href='logout.php'>Logout</a></p>
 </div>
 </body>
 </html>
