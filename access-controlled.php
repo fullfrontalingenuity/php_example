@@ -119,7 +119,7 @@ mysql_query("INSERT INTO " . $table . " VALUES ('Calvin','RCompos','dog','m','20
    or die(mysql_error());  
 
 // Print formatted output from query.
-echo "<b>Select * from pet</b><br>";
+echo "<b>select * from pet</b><br>";
 $res = mysql_query("select * from " . $table . ";")
    or die(mysql_error());  
 if($res) {
@@ -149,7 +149,7 @@ echo "<h3>Successful PHP and MySQL validation!</h3><br>";
 
   echo "<form action=\"", $_SERVER['PHP_SELF'],"\" method=\"post\">";
   echo "<p>";
-  echo "root MySQL password: <input type=\"text\" name=\"password\"><br></p>";
+  echo "root MySQL password: <input type=\"password\" name=\"password\"><br></p>";
   echo "<input type=\"submit\">";
   echo "</form>";
 
