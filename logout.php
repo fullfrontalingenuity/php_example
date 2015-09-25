@@ -16,9 +16,6 @@ $fgmembersite->LogOut();
   include './include/header.php';
 ?>
 <h2>You have logged out</h2>
-<p>
-<a href='login.php'>Login Again</a>
-</p>
 
 </body>
 </html>

@@ -47,6 +47,9 @@ echo "<b>MySQL</b> : " . mysql_get_server_info() . "<br>";
 echo "<b>PHP</b> : " . phpversion() . "<br>";
 echo "<br>";
 
+<?php 
+if (isset($dbpw)){ 
+
 $user= $_POST["user"];
 if($user){
    $dbuser = $user;
@@ -144,6 +147,16 @@ mysql_query("DROP TABLE " . $table . ";")
 mysql_close($link);
 
 echo "<h3>Successful PHP and MySQL validation!</h3><br>";
+
+}else{
+
+  echo "<form action=", $_SERVER['PHP_SELF']," method=post>";
+  echo "<p>";
+  echo "root MySQL password: <input type="text" name="password"><br></p>";
+  echo "<input type="submit">";
+  echo "</form>";
+
+}
 
 ?>
 
