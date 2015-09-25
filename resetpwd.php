@@ -17,6 +17,9 @@ if($fgmembersite->ResetPassword())
       <script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
 </head>
 <body>
+<?php
+  include './include/header.php';
+?>
 <div id='fg_membersite_content'>
 <?php
 if($success){
