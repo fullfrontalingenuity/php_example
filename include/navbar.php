@@ -14,7 +14,7 @@
     $menu = array(
       'callback' => 'modifyNavbar',
       'items' => array(
-        'home'  => array('text'=>'Home',  'url'=>'/?p=home', 'class'=>null),
+        'home'  => array('text'=>'Home', 'url'=>'/login-home.php?p=home', 'class'=>null),
         'test' => array('text'=>'Test', 'url'=>'/access-controlled.php?p=test', 'class'=>null),
         'logout' => array('text'=>'Logout', 'url'=>'/logout.php?p=logout', 'class'=>null),
       ),
