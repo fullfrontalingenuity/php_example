@@ -4,7 +4,7 @@ require_once("./include/fg_membersite.php");
 $fgmembersite = new FGMembersite();
 
 //Provide your site name here
-$fgmembersite->SetWebsiteName('example.com');
+$fgmembersite->SetWebsiteName('prod.example.com');
 
 //Provide the email address where you want to get notifications
 $fgmembersite->SetAdminEmail('admin@example.com');
@@ -14,9 +14,9 @@ $fgmembersite->SetAdminEmail('admin@example.com');
 //note that the script will create the table (for example, fgusers in this case)
 //by itself on submitting register.php for the first time
 $fgmembersite->InitDB(/*hostname*/'localhost',
-                      /*username*/'u_app1_devtest',
+                      /*username*/'u_app1_prod',
                       /*password*/'secret_password',
-                      /*database name*/'devtest',
+                      /*database name*/'prod',
                       /*table name*/'fgusers3');
 
 //For better security. Get a random string from this link: http://tinyurl.com/randstr
