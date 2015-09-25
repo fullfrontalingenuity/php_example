@@ -1,7 +1,9 @@
-
- /****************************
-  *** @filename: gitbranch.php
-  ***/
+<?
+/****************************
+ *
+ * @filename: gitbranch.php
+ *
+ ****************************/
 
     $stringfromfile = file('.git/HEAD', FILE_USE_INCLUDE_PATH);
     $firstLine = $stringfromfile[0]; //get the string from the array
@@ -9,3 +11,4 @@
     $branchname = $explodedstring[2]; //get the one that is always the branch name
 
     echo $branchname;
+?>
