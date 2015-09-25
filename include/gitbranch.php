@@ -23,8 +23,8 @@ function GitBranch()
       $background = "#b20000";
       break;
     default:
-      $branchname = "unexpected branch detected: " .$branchname;
-      $background = "#ff625a";
+      $branchname = "unexpected branch: " .$branchname;
+      $background = "#ffffff";
       break;
   }
   echo "<div style='clear: both; width: 100%; font-size: 14px; font-family: Helvetica; color: #30121d; background: ", $background, "; padding: 20px; text-align: center;'>";
