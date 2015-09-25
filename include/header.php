@@ -1,5 +1,6 @@
 <?php
   require_once("./include/gitbranch.php");
   GitBranch();
-  echo "<p>&nbsp;</p>";
+  require_once("./include/navbar.php");
+  echo "<p>&nbsp;</p>
 ?>
