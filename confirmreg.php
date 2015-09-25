@@ -19,7 +19,9 @@ if(isset($_GET['code']))
       <script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
 </head>
 <body>
-
+<?php
+  include './include/header.php';
+?>
 <h2>Confirm registration</h2>
 <p>
 Please enter the confirmation code in the box below
