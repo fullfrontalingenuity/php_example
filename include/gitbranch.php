@@ -1,4 +1,4 @@
-<?
+<?php
 /****************************
  *
  * @filename: gitbranch.php
