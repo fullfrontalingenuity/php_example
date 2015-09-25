@@ -11,7 +11,6 @@ function GitBranch()
   $firstLine = $stringfromfile[0]; //get the string from the array
   $explodedstring = explode("/", $firstLine, 3); //seperate out by the "/" in the string
   $branchname = $explodedstring[2]; //get the one that is always the branch name
-  $background = "#ffffff;"
   switch ($branchname) {
     case "devtest":
       $background = "#bcbf77";
