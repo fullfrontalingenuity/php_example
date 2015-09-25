@@ -126,7 +126,7 @@ class PHPMailer {
    * Sets the path of the sendmail program.
    * @var string
    */
-  var $Sendmail          = '/usr/sbin/sendmail';
+  var $Sendmail          = '/sbin/sendmail';
 
   /**
    * Path to PHPMailer plugins.  This is now only useful if the SMTP class
