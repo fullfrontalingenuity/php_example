@@ -20,7 +20,7 @@ function GitBranch()
       $background = "#685aff";
       break;
     case 'prod':
-      $background = "#ffff5a";
+      $background = "#b20000";
       break;
     default:
       $branchname = "unexpected branch detected: " .$branchname;
