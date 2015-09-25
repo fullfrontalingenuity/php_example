@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-  include './include/gitbranch.php';
+  include './include/header.php';
 ?>
 <div id='fg_membersite_content'>
 <h2>demo</h2>
