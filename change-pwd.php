@@ -92,11 +92,6 @@ Uses the excellent form validation script from JavaScript-coder.com-->
 // ]]>
 </script>
 
-<p>
-<a href='login-home.php'>Home</a>
-</p>
-
-</div>
 <!--
 Form Code End (see html-form-guide.com for more info.)
 -->
