@@ -1,4 +1,4 @@
 <?php
-  require_once("./include/gitbranch.php");
+  require_once("./gitbranch.php");
   GitBranch();
 ?>
