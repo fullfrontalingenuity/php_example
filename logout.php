@@ -12,7 +12,9 @@ $fgmembersite->LogOut();
       <script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
 </head>
 <body>
-
+<?php
+  include './include/header.php';
+?>
 <h2>You have logged out</h2>
 <p>
 <a href='login.php'>Login Again</a>
