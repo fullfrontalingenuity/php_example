@@ -4,7 +4,7 @@ require_once("./include/fg_membersite.php");
 $fgmembersite = new FGMembersite();
 
 //Provide your site name here
-$fgmembersite->SetWebsiteName('example.com');
+$fgmembersite->SetWebsiteName('devtest.example.com');
 
 //Provide the email address where you want to get notifications
 $fgmembersite->SetAdminEmail('admin@example.com');
