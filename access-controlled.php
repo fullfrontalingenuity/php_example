@@ -11,7 +11,7 @@ if(!$fgmembersite->CheckLogin())
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <head>
       <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-      <title>An Access Controlled Page</title>
+      <title>php_example</title>
       <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css">
 </head>
 <body>
@@ -19,14 +19,10 @@ if(!$fgmembersite->CheckLogin())
   include './include/header.php';
 ?>
 <div id='fg_membersite_content'>
-<h2>This is an Access Controlled Page</h2>
-This page can be accessed after logging in only. To make more access controlled pages, 
-copy paste the code between &lt;?php and ?&gt; to the page and name the page to be php.
+<h2>Test MySQL</h2>
+Use root MySQL password to start a test of MySQL using php.
 <p>
 Logged in as: <?= $fgmembersite->UserFullName() ?>
-</p>
-<p>
-<a href='login-home.php'>Home</a>
 </p>
 </div>
 </body>
