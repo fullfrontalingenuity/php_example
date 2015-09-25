@@ -9,7 +9,7 @@
 
 <div style='clear: both; width: 100%; font-size: 14px; font-family: Helvetica; color: #30121d; background: #bcbf77; padding: 20px; text-align: center;'>
   <span style='color:#fff; font-weight: bold; text-transform: uppercase;'>
-    <?php require_once("./include/gitbranch.php");
+    <?php require_once("./include/gitbranch.php"); ?>
   </span>
 </div>
 
