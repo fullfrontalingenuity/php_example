@@ -10,9 +10,12 @@
   $menu = array(
     'callback' => 'modifyNavbar',
     'items' => array(
-      'home'  => array('text'=>'Home',  'url'=>'?p=home', 'class'=>null),
-      'away'  => array('text'=>'Away',  'url'=>'?p=away', 'class'=>null),
-      'about' => array('text'=>'About', 'url'=>'?p=about', 'class'=>null),
+      'home'  => array('text'=>'Home',  'url'=>'/?p=home', 'class'=>null),
+      'register'  => array('text'=>'Register',  'url'=>'/register.php?p=register', 'class'=>null),
+      'confirm' => array('text'=>'Confirm', 'url'=>'/confirm.php?p=confirm', 'class'=>null),
+      'login' => array('text'=>'Login', 'url'=>'/login.php?p=login', 'class'=>null),
+      'test' => array('text'=>'Test', 'url'=>'/access-controlled.php?p=test', 'class'=>null),
+      'logout' => array('text'=>'Logout', 'url'=>'/logout.php?p=logout', 'class'=>null),
     ),
   );
 
