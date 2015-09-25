@@ -1,4 +1,3 @@
-<?php
 
  /****************************
   *** @filename: gitbranch.php
@@ -10,4 +9,3 @@
     $branchname = $explodedstring[2]; //get the one that is always the branch name
 
     echo $branchname;
-?>
