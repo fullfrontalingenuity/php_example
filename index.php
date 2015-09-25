@@ -6,7 +6,7 @@
       <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css">
 </head>
 <body>
-<? include 'include/gitbranch.php'; ?>
+<?php include './include/gitbranch.php'; ?>
 <div id='fg_membersite_content'>
 <h2>demo</h2>
 <ul>
