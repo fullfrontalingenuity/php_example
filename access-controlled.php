@@ -15,6 +15,9 @@ if(!$fgmembersite->CheckLogin())
       <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css">
 </head>
 <body>
+<?php
+  include './include/header.php';
+?>
 <div id='fg_membersite_content'>
 <h2>This is an Access Controlled Page</h2>
 This page can be accessed after logging in only. To make more access controlled pages, 
