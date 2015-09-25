@@ -11,6 +11,7 @@
 ?>
 <div id='fg_membersite_content'>
 <h2>demo</h2>
+<img src="images/lamp.jpg" class="centered" alt="LAMP" height="500" width="500">
 </div>
 </body>
 </html>
