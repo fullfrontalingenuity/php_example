@@ -5,7 +5,6 @@ $menu = array(
   'about' => array('text'=>'About', 'url'=>'?p=about'),
 );
 
-<?php
 class CNavigation {
   public static function GenerateMenu($items, $class) {
     $html = "<nav class='$class'>\n";
