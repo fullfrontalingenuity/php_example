@@ -27,7 +27,9 @@ if(isset($_POST['submitted']))
       <script src="scripts/pwdwidget.js" type="text/javascript"></script>       
 </head>
 <body>
-
+<?php
+  include './include/header.php';
+?>
 <!-- Form Code Start -->
 <div id='fg_membersite'>
 <form id='changepwd' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
