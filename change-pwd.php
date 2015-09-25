@@ -20,7 +20,7 @@ if(isset($_POST['submitted']))
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <head>
       <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-      <title>Change password</title>
+      <title>php_example</title>
       <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css" />
       <script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
       <link rel="STYLESHEET" type="text/css" href="style/pwdwidget.css" />
@@ -92,11 +92,6 @@ Uses the excellent form validation script from JavaScript-coder.com-->
 // ]]>
 </script>
 
-<p>
-<a href='login-home.php'>Home</a>
-</p>
-
-</div>
 <!--
 Form Code End (see html-form-guide.com for more info.)
 -->

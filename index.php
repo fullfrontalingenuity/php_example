@@ -9,14 +9,9 @@
 <?php
   include './include/header.php';
 ?>
-<div id='fg_membersite_content'>
-<h2>demo</h2>
-<ul>
-<li><a href='register.php'>Register</a></li>
-<li><a href='confirmreg.php'>Confirm registration</a></li>
-<li><a href='login.php'>Login</a></li>
-<li><a href='access-controlled.php'>A sample member's only page</a></li>
-</ul>
-</div>
+  <div id='fg_membersite_content'>
+    <h2>demo</h2>
+    <img src="images/lamp.jpg" class="centered" alt="LAMP" height="500" width="500">
+  </div>
 </body>
 </html>
