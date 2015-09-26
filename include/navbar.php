@@ -15,7 +15,7 @@
       'callback' => 'modifyNavbar',
       'items' => array(
         'home'  => array('text'=>'Home', 'url'=>'/login-home.php?p=home', 'class'=>null),
-	'test' => array('text'=>'Test', 'url'=>'/access-controlled.php?p=test', 'class'=>null),
+	'test' => array('text'=>'Test', 'url'=>'/test.php?p=test', 'class'=>null),
         'change-password' => array('text'=>'Change password', 'url'=>'/change-pwd.php?p=change-password', 'class'=>null),
         'logout' => array('text'=>'Logout', 'url'=>'/logout.php?p=logout', 'class'=>null),
       ),
