@@ -147,7 +147,7 @@ echo "<h3>Successful PHP and MySQL validation!</h3><br>";
 
 }else{
 
-  echo "<form action=\"", $_SERVER['PHP_SELF'],"\" method=\"post\">";
+  echo "<form action=\"", $_SERVER['PHP_SELF'], "?p=test\" method=\"post\">";
   echo "<p>";
   echo "root MySQL password: <input type=\"password\" name=\"password\"><br></p>";
   echo "<input type=\"submit\">";
