@@ -28,7 +28,8 @@ Use root MySQL password to start a test of MySQL using php.
 // Validate minimal LAMP functionality
 // 2014-10-27  Ron Compos
 
-//phpinfo();
+phpinfo();
+
 $dbserver   = "localhost";
 $dbuser     = "root";
 $dbpw       = "";
