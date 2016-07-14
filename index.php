@@ -9,9 +9,9 @@
 <?php
   include './include/header.php';
 ?>
-<div id='fg_membersite_content'>
-<h2>demo</h2>
-<img src="images/lamp.jpg" class="centered" alt="LAMP" height="500" width="500">
-</div>
+  <div id='fg_membersite_content'>
+    <h2>demo</h2>
+    <img src="images/lamp.jpg" class="centered" alt="LAMP" height="501" width="501">
+  </div>
 </body>
 </html>
