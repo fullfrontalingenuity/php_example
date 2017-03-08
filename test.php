@@ -20,7 +20,7 @@ if(!$fgmembersite->CheckLogin())
 ?>
   <div id='fg_membersite_content'>
   <h2>Test MySQL</h2>
-Use root MySQL password to start a test of MySQL using php.
+Output from MySQL test using php:
   </div>
 
 <?php
@@ -142,8 +142,10 @@ if (isset($_POST["password"])){
     echo "</form>";
   }
 
-  phpinfo();
+?>
 
+<?
+  phpinfo();
 ?>
 
 </body>
