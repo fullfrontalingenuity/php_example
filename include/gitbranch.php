@@ -30,7 +30,7 @@ echo $homepage;
       break;
   }
   echo "<div style='clear: both; display block; font-size: 14px; font-family: Helvetica; color: #30121d; background: ", $background, "; padding: 20px; text-align: center;'>";
-  echo "<span style='color:#fff; font-weight: bold; text-transform: uppercase;'>", $branchname, "</span>", "<span style='color:#fff; font-weight: bold; text-transform: lowercase;'>", "(", $version, ")", "</span>";
+  echo "<span style='color:#fff; font-weight: bold; text-transform: uppercase;'>", $branchname, "</span>", " ", "<span style='color:#fff; font-weight: bold; text-transform: lowercase;'>", "(", $version, ")", "</span>";
   echo "</div>";
 }
 ?>
