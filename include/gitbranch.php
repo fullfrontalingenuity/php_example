@@ -12,6 +12,8 @@ function GitBranch()
   $explodedstring = explode("/", $firstLine, 3); //seperate out by the "/" in the string
   $branchname = $explodedstring[2]; //get the one that is always the branch name
   $branchname = str_replace(array("\r", "\n"), '', $branchname);
+  $version = file_get_contents('./include/version.txt');
+echo $homepage;
   switch ($branchname) {
     case 'devtest':
       $background = "#bcbf77";
@@ -28,7 +30,7 @@ function GitBranch()
       break;
   }
   echo "<div style='clear: both; display block; font-size: 14px; font-family: Helvetica; color: #30121d; background: ", $background, "; padding: 20px; text-align: center;'>";
-  echo "<span style='color:#fff; font-weight: bold; text-transform: uppercase;'>", $branchname, "</span>";
+  echo "<span style='color:#fff; font-weight: bold; text-transform: uppercase;'>", $branchname, " ", "(", $version, ")", "</span>";
   echo "</div>";
-} 
+}
 ?>
